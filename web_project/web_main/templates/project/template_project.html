@@ -1,0 +1,124 @@
+{% extends 'project/project_base.html' %}
+{% load static %}
+{% block title %}EnigmaCracker{% endblock %}
+
+{% block publication_title %}
+Enigma Decryption
+{% endblock %}
+
+{% block publication_authors %} 
+<span class="author-block">Alan Turing ,</span>
+<span class="author-block">Gordon Welchman ,</span>
+<span class="author-block">Hugh Alexander ,</span>
+<span class="author-block">and Jack Good.</span>
+{% endblock %}
+
+{% block publication_info %}
+<span class="author-block"><p class="is-7">Bletchley Park, UK Government Code and Cypher School</p> 
+  Journal of Cryptology, 1943</span>
+{% endblock %}
+
+{% block publication_links %}
+<!-- Paper PDF link -->
+<span class="link-block">
+  <a href="{% static 'assets/pdfs/1943_Journal_EnigmaCracker.pdf' %}" target="_blank" class="external-link button is-normal is-rounded is-dark">
+  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+  <span>Paper</span>
+  </a>
+</span>
+<!-- Slides link -->
+<span class="link-block">
+  <a href="{% static 'assets/pdfs/talks/Talks_EnigmaCracker.pdf' %}" target="_blank" class="external-link button is-normal is-rounded is-dark">
+  <span class="icon"><i class="fas fa-file-powerpoint"></i></span>
+  <span>Slides</span>
+  </a>
+</span>
+{% endblock %}
+
+{% block teaser%}              
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item" style="flex-direction: column !important;">
+        <div class="image-container">
+          <img class="media-object img-rounded" style="width: 768px !important" src="{% static 'assets/images/4.png' %}" alt="MY ALT TEXT"/>
+        </div>
+        <h2 class="subtitle has-text-centered has-text-weight-bold is-4">
+          Image 1.
+        </h2>
+      </div>
+      <div class="item" style="flex-direction: column !important;">
+        <div class="image-container">
+          <img class="media-object img-rounded" style="width: 768px !important" src="{% static 'assets/images/5.png' %}" alt="MY ALT TEXT"/>
+        </div>
+        <h2 class="subtitle has-text-centered has-text-weight-bold is-4">
+          Image 2.
+        </h2>
+      </div>
+      <div class="item" style="flex-direction: column !important;">
+        <div class="image-container">
+          <img class="media-object img-rounded" style="width: 768px !important" src="{% static 'assets/images/6.png' %}" alt="MY ALT TEXT"/>
+        </div>
+        <h2 class="subtitle has-text-centered has-text-weight-bold is-4">
+         Image 3.
+       </h2>
+     </div>
+  </div>
+</div>
+</div>
+</section>
+{% endblock %}
+
+{% block paper_abstract %} 
+We propose a novel cryptography-breaking method based on statistical analysis and early computing machines. The methodology was primarily applied to break the Enigma code used by Nazi Germany during WWII. Our method significantly contributed to the deciphering of encrypted messages, thereby giving the Allies a crucial advantage.
+{% endblock %}
+
+{% block extra_abstract %}
+<span class="link-block">
+  <a href="{% static 'assets/pdfs/turing.pdf' %}" target="_blank"
+  class="external-link button is-normal is-rounded is-dark">
+  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+  <span>Additional Material</span>
+  </a>
+</span>
+{% endblock %}
+
+{% block image_base %}{% endblock %}
+
+{% block video_base %}
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <!-- Youtube embed code here -->
+            <iframe src="http://www.youtube.com/embed/4crx2AoS_XM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block bibtex %} 
+@ARTICLE{EnigmaCracker,
+  author={Alan Turing and Gordon Welchman and Hugh Alexander and Jack Good},
+  journal={Journal of Cryptology}, 
+  title={Statistical Methodology for Enigma Decryption}, 
+  year={1943},
+  volume={1},
+  number={1},
+  pages={1-15},
+  doi={10.1007/s00145-943-0015}
+}
+{% endblock %}
+
+</body>
+</html>

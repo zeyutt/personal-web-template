@@ -1,0 +1,294 @@
+/* Basic styles */
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer .icon-link {
+    font-size: 25px;
+    color: #000;
+}
+
+.link-block a {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.dnerf {
+  font-variant: small-caps;
+}
+
+
+.teaser .hero-body {
+  padding-top: 0;
+  padding-bottom: 3rem;
+}
+
+.teaser {
+  font-family: 'Google Sans', sans-serif;
+}
+
+
+.publication-title {
+}
+
+.publication-banner {
+  max-height: parent;
+
+}
+
+.publication-banner video {
+  position: relative;
+  left: auto;
+  top: auto;
+  transform: none;
+  object-fit: fit;
+}
+
+.publication-header .hero-body {
+}
+
+.publication-title {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-authors {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-venue {
+    color: #555;
+    width: fit-content;
+    font-weight: bold;
+}
+
+.publication-awards {
+    color: #ff3860;
+    width: fit-content;
+    font-weight: bolder;
+}
+
+.publication-authors {
+}
+
+.publication-authors a {
+   color: hsl(204, 86%, 53%) !important;
+}
+
+.publication-authors a:hover {
+    text-decoration: underline;
+}
+
+.author-block {
+  display: inline-block;
+}
+
+.publication-banner img {
+}
+
+.publication-authors {
+  /*color: #4286f4;*/
+}
+
+.publication-video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+
+    overflow: hidden;
+    border-radius: 10px !important;
+}
+
+.publication-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.publication-body img {
+}
+
+.results-carousel {
+  overflow: hidden;
+}
+
+.results-carousel .item {
+  margin: 5px;
+  overflow: hidden;
+  padding: 20px;
+  font-size: 0;
+}
+
+.results-carousel video {
+  margin: 0;
+}
+
+.slider-pagination .slider-page {
+  background: #000000;
+}
+
+.eql-cntrb { 
+  font-size: smaller;
+}
+
+/* .image img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+} */
+
+a.underline
+{
+text-decoration: underline;
+}
+
+.custom-tile {
+  max-height: 300px;
+  min-height: 100px;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;  /* Make it the same height as the column */
+}
+
+.media-object {
+  max-width: 85%; /* Make sure the image doesn't overflow */
+  max-height: 85%; /* Make sure the image doesn't overflow */
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 12px; /* Optional: To set a specific border-radius */
+}
+
+.img-empty{
+  width: 300px; 
+  height: 300px; 
+  background-color: transparent;
+  border: 0 !important;
+  border-image-width: 0 !important;
+  outline-color: transparent !important;
+  box-shadow: none !important;
+  border-radius: 290486px !important;
+}
+.image-container .media-object {
+  max-height: inherit;
+}
+.compact-footer {
+  padding: 0.5rem 1.5rem;  /* Reduced padding */
+}
+
+.hero-with-border {
+  border: 1px solid black; /* You can change the border thickness and color */
+}
+
+/* Style for the active tab */
+.hero.is-primary .tabs.is-boxed li.is-active a,
+.hero.is-link .tabs.is-boxed li.is-active a  {
+  background-color: #fff; /* White background */
+}
+.hero.is-light .tabs.is-boxed li.is-active a {
+  background-color: #666; /* White background */
+}
+
+/* Style for the icon in the active tab */
+.hero.is-primary .tabs.is-boxed li.is-active a
+.hero.is-primary .tabs.is-boxed li.is-active a .icon,
+.hero.is-primary .tabs.is-boxed li.is-active a .fa ,
+.hero.is-primary .tabs.is-boxed li.is-active a span {
+  color: #00d1b2; /* Some color for the icon, you can change it */
+}
+
+.hero.is-light .tabs.is-boxed li.is-active a
+.hero.is-light .tabs.is-boxed li.is-active a .icon,
+.hero.is-light .tabs.is-boxed li.is-active a .fa ,
+.hero.is-light .tabs.is-boxed li.is-active a span {
+  color: #fff; /* Some color for the icon, you can change it */
+}
+.hero.is-link .tabs.is-boxed li.is-active a,
+.hero.is-link .tabs.is-boxed li.is-active a .icon,
+.hero.is-link .tabs.is-boxed li.is-active a .fa,
+.hero.is-link .tabs.is-boxed li.is-active a span {
+  color: #3273dc; /* Color for the icon and text, you can change it */
+}
+
+/* Style for SVG icon in the active tab */
+.hero.is-primary .tabs.is-boxed li.is-active a svg {
+  fill: #00d1b2; /* Some color for the SVG icon, you can change it */
+}
+.hero.is-light .tabs.is-boxed li.is-active a svg {
+  fill: #fff; /* Some color for the SVG icon, you can change it */
+}
+.hero.is-link .tabs.is-boxed li.is-active a svg {
+  fill: #3273dc; /* Color for the SVG icon, you can change it */
+}
+/* nonactive */
+/* Style for the non-active tabs */
+.hero.is-light .tabs.is-boxed li a,
+.hero.is-primary .tabs.is-boxed li a,
+.hero.hero.is-link.tabs.is-boxed li a {
+  background-color: transparent; /* Transparent background */
+}
+
+/* Style for the icon in the non-active tabs */
+.hero.is-primary .tabs.is-boxed li a
+.hero.is-primary .tabs.is-boxed li a .icon,
+.hero.is-primary .tabs.is-boxed li a .fa,
+.hero.is-primary .tabs.is-boxed li a span,
+.hero.is-link .tabs.is-boxed li a,
+.hero.is-link .tabs.is-boxed li a .icon,
+.hero.is-link .tabs.is-boxed li a .fa,
+.hero.is-link .tabs.is-boxed li a span {
+  color: #fff; /* White color for the icon */
+}
+/* Style for SVG icon in the non-active tabs */
+.hero.is-primary .tabs.is-boxed li a svg,
+.hero.is-link .tabs.is-boxed li a svg {
+  fill: #fff; /* White color for the SVG icon */
+}
+
+
+.hero.is-light .tabs.is-boxed li a
+.hero.is-light .tabs.is-boxed li a .icon,
+.hero.is-light .tabs.is-boxed li a .fa,
+.hero.is-light .tabs.is-boxed li a span {
+  color: #666; /* White color for the icon */
+}
+
+/* Style for SVG icon in the non-active tabs */
+.hero.is-light .tabs.is-boxed li a svg {
+  fill: #666; /* White color for the SVG icon */
+}
+
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

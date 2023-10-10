@@ -1,0 +1,166 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    {% with active_page='research' %}
+        {% include 'navbar_section.html' %}
+    {% endwith %}
+    <!-- ... rest of the content ... -->
+{% endblock %}
+
+{% block content %}
+<!-- Turing's Research -->
+<div class="notification is-primary is-centered is-four-fifths">
+  <strong>
+    The up-to-date paper list can be found on Alan Turing's <a href="https://en.wikipedia.org/wiki/Alan_Turing#Publications"> Wikipedia page</a>.
+  </strong>
+</div>
+
+<!-- Turing's Research Tiles -->
+<div class="tile is-ancestor">
+  <div class="tile is-vertical is-12">
+    <div class="tile">
+      <div class="tile is-parent is-vertical">
+        <!-- Computability -->
+        <article class="tile is-child notification is-light ">
+          <p class="title">Computability</p>
+          <!-- On Computable Numbers -->
+          <article class="media">
+            <figure class="media-left">
+              <div class="image-container" style="max-width: 300px;">
+                <!-- Replace with Turing's paper image if available -->
+                <img class="media-object img-rounded" src="{%static 'assets/images/1.png' %}">
+              </div>
+            </figure>
+            <div class="media-content">
+              <div class="content">
+                <p class="title is-3 publication-title">On Computable Numbers, with an Application to the Entscheidungsproblem</p>
+                <p class="subtitle is-6">Proceedings of the London Mathematical Society, 1936.</p>
+                <div class="is-size-5 publication-authors">
+                  <span class="author-block"><strong>Alan Turing</strong></span>
+                </div>
+              </div>
+              <!-- Add links to paper, project, etc. if available -->
+              <nav class="level is-mobile">
+                <div class="publication-links">
+                  <!-- project page link  -->
+                  <span class="link-block">
+                    <a href="{% url 'template_project' %}" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"> <i class="fas fa-folder-open"></i></span>
+                    <span>Project</span>
+                    </a>
+                  </span>
+                  <!-- Arxiv PDF link -->
+                  <span class="link-block">
+                    <a href="{% static 'assets/pdfs/turing.pdf' %}" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                    <span>Paper</span>
+                    </a>
+                  </span>
+                  <!-- slides link -->
+                  <span class="link-block">
+                    <a href="{% static 'assets/pdfs/course/Alan_Turing_Presentation.pptx' %}" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"> <i class="fas fa-file-powerpoint"></i></span>
+                    <span>Slides</span>
+                    </a>
+                  </span>
+                  
+                  <!-- github repo link -->
+                  <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"> <i class="fab fa-github"></i></span>
+                    <span>Code</span>
+                    </a>
+                  </span>
+                  <!-- data download link -->
+                  <span class="link-block">
+                    <a href="{% static 'assets/pdfs/turing.pdf' %}" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"> <i class="fas fa-file-download"></i></span>
+                    <span>Data</span>
+                    </a>
+                  </span>
+                </div>
+                
+              </nav>
+            </div>
+          </article>
+          <!-- Turing Machine -->
+          <article class="media">
+            <figure class="media-left">
+              <div class="image-container" style="max-width: 300px;">
+                <!-- Replace with Turing's Turing Machine image if available -->
+                <img class="media-object img-rounded" src="{% static 'assets/images/2.png' %}">
+              </div>
+            </figure>
+            <div class="media-content">
+              <div class="content">
+                <p class="title is-3 publication-title">On Computable Numbers: The Turing Machine</p>
+                <p class="subtitle is-6">Proceedings of the London Mathematical Society, 1937.</p>
+                <div class="is-size-5 publication-authors">
+                  <span class="author-block"><strong>Alan Turing</strong></span>
+                </div>
+              </div>
+              <!-- Add links to paper, project, etc. if available -->
+            </div>
+          </article>
+        </article>
+        <!-- Cryptanalysis -->
+        <article class="tile is-child notification is-link ">
+          <p class="title">Cryptanalysis</p>
+          <!-- The Enigma -->
+          <article class="media">
+            <figure class="media-left">
+              <div class="image-container" style="max-width: 300px;">
+                <!-- Replace with Turing's Enigma machine image if available -->
+                <img class="media-object img-rounded" src="{%static 'assets/images/3.png' %}">
+              </div>
+            </figure>
+            <div class="media-content">
+              <div class="content">
+                <p class="title is-3 publication-title">Breaking the Enigma Code</p>
+                <p class="subtitle is-6">Classified, 1941.</p>
+                <div class="is-size-5 publication-authors">
+                  <span class="author-block"><strong>Alan Turing</strong></span>
+                </div>
+              </div>
+              <!-- Add links to paper, project, etc. if available -->
+            </div>
+          </article>
+        </article>
+        <!-- Mathematical Biology -->
+        <article class="tile is-child notification is-light ">
+          <p class="title">Mathematical Biology</p>
+          <!-- The Chemical Basis of Morphogenesis -->
+          <article class="media">
+            <figure class="media-left">
+              <div class="image-container" style="max-width: 300px;">
+                <!-- Replace with Turing's Morphogenesis image if available -->
+                <img class="media-object img-rounded" src="{%static 'assets/images/4.png' %}">
+              </div>
+            </figure>
+            <div class="media-content">
+              <div class="content">
+                <p class="title is-3 publication-title">The Chemical Basis of Morphogenesis</p>
+                <p class="subtitle is-6">Philosophical Transactions of the Royal Society of London, 1952.</p>
+                <div class="is-size-5 publication-authors">
+                  <span class="author-block"><strong>Alan Turing</strong></span>
+                </div>
+              </div>
+              <!-- Add links to paper, project, etc. if available -->
+            </div>
+          </article>
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% comment %} {% block foot_js_script %}
+  <script src="{% static 'js/index.js' %}"></script>
+{% endblock %} {% endcomment %}

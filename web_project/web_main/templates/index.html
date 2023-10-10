@@ -1,0 +1,72 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    {% with active_page='home' %}
+        {% include 'navbar_section.html' %}
+    {% endwith %}
+    <!-- ... rest of the content ... -->
+{% endblock %}
+
+{% block content %}
+  <!-- Personal Info  -->
+  <section class="hero is-white is-medium mt-3 mb-3">
+    <div class="columns is-centered is-vcentered is-1">
+        <div class="column is-narrow is-one-third is-offset-1">
+          <div class="image-container">
+            <img class="media-object img-rounded" src="{% static '/assets/images/portrait.png' %}">
+          </div>
+        </div>
+        <div class="column">
+          <div class="block">
+            <h1 class="title">Alan Turing</h1>
+            <h2 class="subtitle">Code Breaker</h2>
+            <div> 
+              <span class="icon-text">
+                <span class="icon is-medium">
+                  <i class="fas fa-envelope"></i>
+                </span>
+                <span >
+                  <a class="underline" href="#">alan_turing@future.edu.com</a>
+                </span>
+              </span>
+            </div>
+            <div>
+              <span class="icon-text">
+                <span class="icon is-medium">
+                  <i class="fas fa-location-arrow"></i>
+                </span>
+                <span >
+                  <a> Plaque, 78 High Street, Hampton, England</a>
+                </span>
+              </span>
+            </div>
+            
+          </div>
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title" style="padding: .5rem .5rem;">
+                Short Biography
+              </p>
+            </header>
+            <div class="card-content" style="padding: .8rem 1.0rem;">
+              <div class="content">
+                <p>British mathematician and logician who made major contributions to mathematics, cryptanalysis, logic, philosophy, and mathematical biology and also to the new areas later named computer science, cognitive science, artificial intelligence, and artificial life.</p>
+                <p>He entered the University of Cambridge to study mathematics in 1931. After graduating in 1934, he was elected to a fellowship at King’s College (his college since 1931) in recognition of his research in probability theory. In 1936 Turing’s seminal paper “On Computable Numbers, with an Application to the Entscheidungsproblem [Decision Problem]” was recommended for publication by the American mathematical logician Alonzo Church, who had himself just published a paper that reached the same conclusion as Turing’s, although by a different method. Turing’s method (but not so much Church’s) had profound significance for the emerging science of computing. Later that year Turing moved to Princeton University to study for a Ph.D. in mathematical logic under Church’s direction (completed in 1938).</p>
+                <p>His research focues on following aspects:</p>
+                <div class="tags are-medium">
+                  <span class="tag is-dark">mathematics</span>
+                  <span class="tag is-dark">cryptanalysis</span>
+                  <span class="tag is-dark">cognitive science</span>
+                  <span class="tag is-dark">artificial intelligence</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="column is-1">
+        </div>
+      </div>
+  </section>
+{% endblock %}

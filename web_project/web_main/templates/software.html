@@ -1,0 +1,93 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    {% with active_page='software' %}
+        {% include 'navbar_section.html' %}
+    {% endwith %}
+    <!-- ... rest of the content ... -->
+{% endblock %}
+
+{% block content %}
+<div class="tile is-ancestor mt-3 mb-3">
+  <div class="tile is-vertical is-4">
+    <div class="tile is-parent is-vertical">
+      <!-- 1. TuringMachineSim -->
+      <article class="tile is-child notification is-link">
+        <p class="title">1. TuringMachineSim</p>
+        <p class="subtitle">A simulator designed to emulate Turing Machines, helping students and researchers understand the foundational principles of computation.</p>
+        <span class="link-block">
+          <a href="https://github.com/AlanTuring/TuringMachineSim" target="_blank"
+          class="external-link button is-normal is-rounded is-dark">
+          <span class="icon">
+            <i class="fab fa-github"></i>
+          </span>
+          <span>Github</span>
+          </a>
+        </span>
+      </article>
+      <!-- 2. EnigmaCrack -->
+      <article class="tile is-child notification is-light">
+        <p class="title">2. EnigmaCrack</p>
+        <p class="subtitle">Software for decrypting messages encrypted using the Enigma machine, based on Turing's original algorithms.</p>
+        <span class="link-block">
+          <a href="https://github.com/AlanTuring/EnigmaCrack" target="_blank"
+          class="external-link button is-normal is-rounded is-dark">
+          <span class="icon">
+            <i class="fab fa-github"></i>
+          </span>
+          <span>Github</span>
+          </a>
+        </span>
+      </article>
+    </div>
+  </div>
+  <div class="tile is-vertical is-4">
+    <div class="tile">
+      <div class="tile is-parent is-vertical">
+        <!-- 3. MorphoGen -->
+        <article class="tile is-child notification is-light">
+          <p class="title">3. MorphoGen</p>
+          <p class="subtitle">A software tool designed to simulate Turing's reaction-diffusion models, providing insights into the patterns of morphogenesis.</p>
+          <span class="link-block">
+            <a href="https://github.com/AlanTuring/MorphoGen" target="_blank"
+            class="external-link button is-normal is-rounded is-dark">
+            <span class="icon">
+              <i class="fab fa-github"></i>
+            </span>
+            <span>Github</span>
+            </a>
+          </span>
+        </article>
+        <!-- 4. UniversalComputing -->
+        <article class="tile is-child notification is-link">
+          <p class="title">4. UniversalComputing</p>
+          <p class="subtitle">A library that offers implementations of Universal Turing Machines, exploring the limits of what can be computed.</p>
+          <span class="link-block">
+            <a href="https://github.com/AlanTuring/UniversalComputing" target="_blank"
+            class="external-link button is-normal is-rounded is-dark">
+            <span class="icon">
+              <i class="fab fa-github"></i>
+            </span>
+            <span>Github</span>
+            </a>
+          </span>
+        </article>
+      </div>
+    </div>
+  </div>
+  <div class="tile is-vertical is-4">
+    <div class="tile">
+      <div class="tile is-parent is-vertical">
+        <article class="tile is-child notification is-light">
+          <p class="title">More is coming ...</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% comment %} {% block foot_js_script %}
+  <script src="{% static 'js/index.js' %}"></script>
+{% endblock %} {% endcomment %}

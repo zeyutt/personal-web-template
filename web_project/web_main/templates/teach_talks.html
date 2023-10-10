@@ -1,0 +1,101 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    {% with active_page='teach_talks' %}
+        {% include 'navbar_section.html' %}
+    {% endwith %}
+    <!-- ... rest of the content ... -->
+{% endblock %}
+
+{% block content %}
+<!-- Teaching -->
+<section class="hero is-info is-small has-background-light publication-title">
+  <div class="hero-body">
+    <p class="title has-text-black">Courses</p>
+    <p class="subtitle has-text-black">Undergraduate course - Theoretical Foundations of Computation (CS101)</p>
+    <div class="table-container">
+      <table class="table is-hoverable has-text-left">
+        <tbody>
+          <!-- L1 -->
+          <tr>
+            <td>Lecture 1 - Introduction to Computability</td>
+            <td><span class="link-block">
+              <a href="{%static 'assets/pdfs/course/Turing_Lecture1.pptx' %}" target="_blank"
+              class="external-link button is-normal is-rounded is-dark">
+              <span class="icon"> <i class="fas fa-file-pdf"></i></span>
+              <span>Slides</span>
+              </a>
+            </span></td>
+          </tr>
+          <!-- L2 -->
+          <tr>
+            <td>Lecture 2 - Finite Automata</td>
+            <td><span class="link-block">
+              <a href="{%static 'assets/pdfs/course/Turing_Lecture2.pptx' %}" target="_blank"
+              class="external-link button is-normal is-rounded is-dark">
+              <span class="icon"> <i class="fas fa-file-pdf"></i></span>
+              <span>Slides</span>
+              </a>
+            </span></td>
+          </tr>
+          <!-- L3 -->
+          <tr>
+            <td>Lecture 3 - Turing Machines</td>
+            <td><span class="link-block">
+              <a href="{%static 'assets/pdfs/course/Turing_Lecture3.pptx' %}" target="_blank"
+              class="external-link button is-normal is-rounded is-dark">
+              <span class="icon"> <i class="fas fa-file-pdf"></i></span>
+              <span>Slides</span>
+              </a>
+            </span></td>
+          </tr>
+          <!-- ongoing -->
+        </tbody>
+      </table>
+      <p class="has-text-black is-size-6">... ... (on going) </p>
+    </div>
+  </div>
+</section>
+<!-- Talks -->
+<section class="hero is-info is-small has-background-link publication-title">
+  <div class="hero-body">
+    <p class="title has-text-white">Talks</p>
+    <div class="table-container">
+      <table class="table has-text-left has-text-white" style="background-color: transparent !important ;">
+        <tbody>
+          <!-- Turing Award Lecture -->
+          <tr>
+            <td class="has-text-weight-bold">On Computable Numbers, with an Application to the Entscheidungsproblem</td>
+            <td>Princeton University, 1937</td>
+            <td><span class="link-block">
+              <a href="{%static 'assets/pdfs/talks/Turing_Award_Lecture.pptx' %}" target="_blank"
+              class="external-link button is-normal is-rounded is-dark">
+              <span class="icon"> <i class="fas fa-file-pdf"></i></span>
+              <span>Slides</span>
+              </a>
+            </span></td>
+          </tr>
+          <!-- Manchester University -->
+          <tr>
+            <td class="has-text-weight-bold">The Imitation Game: A New Measure of Intelligence</td>
+            <td>Manchester University, 1950</td>
+            <td><span class="link-block">
+              <a href="{%static 'assets/pdfs/talks/Turing_Imitation_Game.pptx' %}" target="_blank"
+              class="external-link button is-normal is-rounded is-dark">
+              <span class="icon"> <i class="fas fa-file-pdf"></i></span>
+              <span>Slides</span>
+              </a>
+            </span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
+
+{% comment %} {% block foot_js_script %}
+  <script src="{% static 'js/index.js' %}"></script>
+{% endblock %} {% endcomment %}

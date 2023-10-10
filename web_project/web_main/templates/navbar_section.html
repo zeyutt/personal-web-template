@@ -1,0 +1,34 @@
+{% load static %}
+<section class="hero is-info is-small has-background-light">
+  <div class="hero-body">
+    <div class="container" style="display: flex; align-items: center;">
+      <!-- Left side (Logo) -->
+      <div class="navbar-brand">
+        <a class="navbar-item">
+          <img src="{% static 'assets/images/your-logo.png' %}" alt="Logo" style="max-height: 100px; object-fit: cover;">
+        </a>
+      </div>
+      <!-- Right side (Titles) -->
+      <div class="content" style="margin-left: 1rem;">
+        <p class="title" style="color: black;">Personal Website</p>
+        <p class="subtitle" style="color: black;">Website subtitle</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-foot has-background-link-dark">
+    <nav class="navbar is-spaced-rf">
+        <div class="container">
+            <div id="navbarMenuHeroA" class="navbar-menu">
+                <div class="navbar-end">
+                  <a class="navbar-item {% if active_page == 'home' %}is-active{% endif %}" href="{% url 'index' %}">Home</a>
+                  <a class="navbar-item {% if active_page == 'research' %}is-active{% endif %}" href="{% url 'research' %}">Research</a>
+                  <a class="navbar-item {% if active_page == 'teach_talks' %}is-active{% endif %}" href="{% url 'teach_talks' %}">Teaching & Talks</a>
+                  <a class="navbar-item {% if active_page == 'software' %}is-active{% endif %}" href="{% url 'software' %}">Software</a>
+                  <a class="navbar-item {% if active_page == 'videos' %}is-active{% endif %}" href="{% url 'videos' %}">Videos</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+  </div>
+</section>

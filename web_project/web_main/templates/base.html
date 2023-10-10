@@ -1,0 +1,70 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta section -->
+    <meta charset="UTF-8">
+    <!-- title section  -->
+    <title>{% block title %}Your Name - Your Institution{% endblock %}</title>
+    {% block favicon %}
+    <link rel="icon" href="{% static 'assets/images/favicon.ico' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'assets/images/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'assets/images/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'assets/images/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'assets/images/site.webmanifest' %}">
+    {% endblock %}
+    {% block css_link %}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro">
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="{% static 'css/bulma.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bulma-carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bulma-slider.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fontawesome.all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    {% endblock %}
+
+    {% block js_script %}
+    <script src="https://ajax.loli.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="{% static 'js/fontawesome.all.min.js' %}"></script>
+    <script src="{% static 'js/bulma-carousel.min.js' %}"></script>
+    <script src="{% static 'js/bulma-slider.min.js' %}"></script>
+    <script defer src="{% static 'js/index.js' %}" ></script>
+    {% endblock %}
+    
+    {% block extra_js_css %}
+    <!-- This block can be overridden to include page-specific styles or scripts -->
+    {% endblock %}
+</head>
+<body>
+    <!-- ... common body content ... -->
+    {% block head%}
+
+    {% endblock%}
+
+    {% block content %}
+    <!-- This block will contain the unique content of each page -->
+    {% endblock %}
+    
+    <!-- ... common footer ... -->
+    {% block common_footer %}
+    <footer class="footer is-small is-light compact-footer">
+      <div class="content has-text-centered">
+        <p style="color: black;">
+          You are the Number {{ visitor_count }} visitor to visit this page. Welcome to my website!
+        </p>
+        <p style="font-size: 0.8rem;color: black;">
+            This page was built using the <a class="underline" href="https://github.com/zeyutt/personal-web-template">Personal Web Page Template</a>.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license" class="underline" href="http://creativecommons.org/licenses/by-sa/4.0/">CC 4.0 license</a>.
+        </p>
+      </div>
+    </footer>
+    {% endblock %}
+
+    {% block foot_js_script %}
+    {% comment %} <script src="{% static 'js/index.js' %}"></script> {% endcomment %}
+    {% endblock %}
+
+</body>
+</html>
