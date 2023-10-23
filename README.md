@@ -3,7 +3,7 @@ This is a personal website template, suitable for researcher and students. Djang
 
 If any question, start an issue and let everyone can reach you.
 
-The example page is in [here]()
+The example page is in [here](https://drone.sjtu.edu.cn/dpzou/)
 ## Setup
 ### 1.MYSQL
 #### 1.1 install mysql
